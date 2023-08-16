@@ -4,7 +4,7 @@ function twoSum (nums, target) {
         for (let j = 1; j < nums.length; j++) {
             const addend = nums[j];
             const sum = currentIndex + addend;
-            if (sum === target && (currentIndex !== addend)) {
+            if (sum === target) {
                 return([i,j]);
             }
         }
